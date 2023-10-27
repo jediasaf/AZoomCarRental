@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <script>
+            function checkMemberName() {
+                var memberNameInput = document.querySelector(".rectangle-2");
+                var memberName = memberNameInput.value;
+    
+                if (!memberName) {
+                    alert("Member name is not exist. Come to our office to be part of Us"); // Display an alert as an error message
+                }
+            }
+
+            function redirectToInspect() {
+        window.location.href = "InspectCar.html"; // Replace with the actual URL of the target HTML page
+    }
+            
+
+            function redirectToAnotherPage() {
+        window.location.href = "Hilux.html"; // Replace with the actual URL of the target HTML page
+    }
+
+    function redirectToAnotherPageBMW() {
+        window.location.href = "SedanCar.html"; // Replace with the actual URL of the target HTML page
+    }
+
+    function redirectToAnotherPageElectric() {
+        window.location.href = "ElectricCar.html"; // Replace with the actual URL of the target HTML page
+    }
+
+    function ReturnSuccessful() {
+                    alert("Successfully Returned"); // Display an alert as an error message
+                }
+        </script>
+    </head>
+    <body>
+        <div class="index">
+            <div class="div">
+                <div class="overlap">
+                    <div class="group"><img class="erik-mclean" src="wallpaper.png" /></div>
+                    <p class="text-wrapper">your gate away to new world.</p>
+                    <div class="frame"><a href="#reserve" class="text-wrapper-2">Reserve Now</a></div>
+                    <div class="frame-2">
+                        <div class="rectangle"></div>
+                        <div class="navbar">
+                            <img class="azoom" src="Logo.png" />
+                            <div class="navbar-2">
+                                <a href="#" class="text-wrapper-2">Home</a>
+                                <a href="#reserve"  class="text-wrapper-2">Reserve Car</a>
+                                <a  href="#return" class="text-wrapper-2">Return a Car</a>
+                                <a onclick="redirectToInspect()" class="text-wrapper-2">Inspect Car</a>
+                            </div>
+                            <div class="frame-3">
+                                <input placeholder="Member" class="rectangle-2"></input>
+                                <input placeholder="Password" class="rectangle-2"></input>
+                                <a><img class="button" src="button.svg" onclick="checkMemberName()"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="reserve" class="group-2">
+                    <div class="element">
+                        <div class="image-title">
+                            <div class="rectangle-wrapper"><img class="img" src="Hilux.png" /></div>
+                            <div class="name-location-price">
+                                <div class="name-location">
+                                    <div class="name">4x4 car</div>
+                                    <div class="location"><div class="text">Toyota Hilux or Similar</div></div>
+                                </div>
+                                <div class="price"><div class="text-wrapper-3">$25/hr</div></div>
+                            </div>
+                        </div>
+                        <button class="div-wrapper" onclick="redirectToAnotherPage()"><div class="text-wrapper-4">Reserve Now</div></button>
+                    </div>
+                    <div class="element-2">
+                        <div class="image-title">
+                            <div class="rectangle-wrapper"><img class="img" src="BMW.png" /></div>
+                            <div class="name-location-price">
+                                <div class="name-location">
+                                    <div class="name">Sedan Car</div>
+                                    <div class="location"><div class="text">BMW X3 or Similar</div></div>
+                                </div>
+                                <div class="price"><div class="text-wrapper-3">$14/hr</div></div>
+                            </div>
+                        </div>
+                        <button onclick="redirectToAnotherPageBMW()" class="div-wrapper"><div class="text-wrapper-4">Reserve Now</div></button>
+                    </div>
+                    <div class="element-3">
+                        <div class="image-title">
+                            <div class="img-wrapper"><img class="img" src="Electric.png" /></div>
+                            <div class="name-location-price">
+                                <div class="name-location">
+                                    <div class="name">Electric Car</div>
+                                    <div class="location"><div class="text">Hyundai Ioniq or Similar</div></div>
+                                </div>
+                                <div class="price"><div class="text-wrapper-3">$21/hr</div></div>
+                            </div>
+                        </div>
+                        <button class="div-wrapper" onclick="redirectToAnotherPageElectric()" ><div class="text-wrapper-4">Reserve Now</div></button>
+                    </div>
+                </div>
+                <div class="overlap-group">
+                    <div class="group-3">
+                        <div class="frame-4">
+                            <div class="rectangle-3"></div>
+                            <div class="rectangle-4"></div>
+                        </div>
+                        <div id="return" class="text-wrapper-5">Return a Car</div>
+                    </div>
+                    <div class="frame-5">
+                        <div class="frame-6">
+                            <div class="group-4">
+                                <select class="rectangle-5">
+                                    <option value="4x4">4 x 4 Car</option>
+                                    <option value="Sedan">Sedan Car</option>
+                                    <option value="electric">Electric</option>
+                                </select>
+                                <div class="text-wrapper-6">Type of Car</div>
+                            </div>
+                            <div class="group-5">
+                                <input class="rectangle-6"></input>
+                                <div class="text-wrapper-7">Booking ID</div>
+                            </div>
+                            <div class="group-5">
+                                <input class="rectangle-6"></input>
+                                <div class="text-wrapper-7">Full Name</div>
+                            </div>
+                            <button onclick="ReturnSuccessful()" class="button-2"><div class="text-2">Return Car</div></button>
+                        </div>
+                        <p class="only-fill-this-after">
+                            <span class="span">Only fill this after left the car at:<br /></span>
+                            <span class="text-wrapper-8"
+                                ><br /><br /><br />461 Clementi Rd, Singapore 599491<br />Block B<br />Level B1<br /><br />+(65)</span
+                            >
+                            <a
+                                href="https://www.google.com/search?client=safari&rls=en&q=SIM&ie=UTF-8&oe=UTF-8#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                ><span class="text-wrapper-9">6248 9746</span></a
+                            >
+                        </p>
+                    </div>
+                </div>
+                <div class="text-wrapper-10">Locate Us!</div>
+                <div class="gmaps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7444038605813!2d103.77359421064948!3d1.3294011986524117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1080893304bd%3A0xc889e76f4e447e42!2sSIM%20Global%20Education!5e0!3m2!1sen!2ssg!4v1698322999407!5m2!1sen!2ssg" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                <div class="frame-wrapper">
+                    <div class="group-wrapper">
+                        <div class="overlap-group-wrapper">
+                            <div class="overlap-group-2">
+                                <p class="element-clementi-rd">
+                                    <span class="text-wrapper-11"
+                                        >461 Clementi Rd, Singapore 599491<br />Block B<br />Level B1<br /><br />+(65)</span
+                                    >
+                                    <a
+                                        href="https://www.google.com/search?client=safari&rls=en&q=SIM&ie=UTF-8&oe=UTF-8#"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        ><span class="text-wrapper-12">6248 9746</span></a
+                                    >
+                                </p>
+                                <img class="azoom-2" src="Logo.png" />
+                                <p class="p">2023 AZoom Car Rental Pte. Ltd.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
